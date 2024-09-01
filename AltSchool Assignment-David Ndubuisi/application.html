@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form - ALT SCHOOL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">About Me</a></li>
+            <li><a href="application.html">Application Form</a></li>
+            <li><a href="table.html">Courses and Schools</a></li>
+            <li><a href="media.html">Media</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Application Form</h1>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Personal Information</legend>
+                
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" placeholder="What's Your Name?" required>
+                
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Let's Have Your E-mail Too"required>
+                
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" placeholder="Let's Know Your Birthday" required>
+                
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Can I Get Your Digits? &#128527;" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Program Information</legend>
+                
+                <label for="program">Choose a Program:</label>
+                <select id="program" name="program" required>
+                    <option value="software-engineering">Software Engineering</option>
+                    <option value="data-science">Data Science</option>
+                    <option value="product-design">Product Design</option>
+                </select>
+                
+                <label for="whyJoin">Why do you want to join ALT SCHOOL?</label>
+                <textarea id="whyJoin" name="whyJoin" rows="4" required></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Additional Information</legend>
+                
+                <label for="additionalInfo">Anything else you would like us to know?</label>
+                <textarea id="additionalInfo" name="additionalInfo" rows="4"></textarea>
+            </fieldset>
+
+            <button class="submitbtn" type="submit">Submit Application</button>
+        </form>
+    </main>
+</body>
+</html>
